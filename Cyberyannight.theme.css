@@ -3773,7 +3773,7 @@ border-bottom: 2px solid var(--hover);
 .attachButton-2WznTc svg {
 	visibility: hidden;
 }
-/**/
+
 .textArea-12jD-V {
 	margin-bottom: 5px;
 	padding: 0;
@@ -3785,7 +3785,7 @@ border-bottom: 2px solid var(--hover);
 	z-index: 101;
 	min-height: 50px
 }
-/**/
+*/
 .scrollableContainer-2NUZem {
 	border-radius: 0;
 	background:rgba(255,255,255,0.07) !important;
@@ -4855,7 +4855,7 @@ border-bottom: 2px solid var(--hover);
 	content:'';
 	position:absolute;
 	top:0;
-	left:55px;
+	left:5px;
 	width:calc(100% - 65px);
 	height:calc(100% - 25px);
 	z-index:-1;
@@ -10525,7 +10525,7 @@ header + .peopleListItem-2nzedh {
 /*17. General Avatars*/
 
 /*17.a. Roundness and Mask*/
-/*
+
 #app-mount .avatarHint-1qgaV3 foreignObject {
 	mask: none;
 }
@@ -10534,9 +10534,9 @@ header + .peopleListItem-2nzedh {
 	overflow: visible;
 	mask: none;
 }
-*/
+
 /*17.b. Status*/
-/*
+
 #app-mount .wrapper-3t9DeA .mask-1l8v16>rect[x="22"] {
 	x: 0;
 	y: 0;
