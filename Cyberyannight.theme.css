@@ -2981,7 +2981,7 @@ border-bottom: 2px solid var(--hover);
 .message-2qnXI6,
 .cozy-3raOZG.wrapper-2a6GCs:not(.message-2qnXI6) {
 	background: rgba(255, 255, 255, 0.075) !important;
-	border-left: 2px solid rgba(255, 255, 255, 0.075) !important;
+	border-left: 3px solid rgba(255, 255, 255, 0.075) !important;
 	margin: 0 20px;
 	padding-right:0;
 }
@@ -3029,18 +3029,39 @@ border-bottom: 2px solid var(--hover);
     position: relative;
     width: 100%;
 }
-
-.cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e {
+/*
+.cozy-3raOZg .contents-2mQqc9 .avatar-1BDn8e[aria-label*=", Online"]::after {
+	--status-color:var(--success);
 	z-index:1;
 	left: 0;
+	
 	margin: 0 10px;
 	display: block;
-	margin-top: calc(30px + .25em);
+	margin-top: calc(50px + .25em);
 	border-radius: var(--user-roundness);
 	height: 32px !important;
 	width: 32px !important;
-	box-shadow: 0 0 0 2px rgba(255, 255, 255, .15);
+	//--status-color:var(--accent);
+	box-shadow: 0 0 0 2px var(--status-color);
+	
 	transition: 150ms ease box-shadow;
+}
+*/
+.cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e {
+	z-index:1;
+	left: 0;
+	
+	margin: 0 10px;
+	display: block;
+	margin-top: calc(50px + .25em);
+	border-radius: var(--user-roundness);
+	height: 32px !important;
+	width: 32px !important;
+	//--status-color:var(--accent);
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+	
+	transition: 150ms ease box-shadow;
+	//investigate here for status borders
 }
 
 .cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e:hover {
@@ -3087,6 +3108,7 @@ border-bottom: 2px solid var(--hover);
 }
 
 .timestamp-3ZCmNB {
+	
 	font-size: var(--size3) !important;
 	cursor: text;
 	
@@ -7677,7 +7699,7 @@ body .bd-toasts {
 	animation-delay:200ms;
 	transform-origin:left;
 }
-
+//investigate status borders
 .full-motion .header-QKLPzZ .avatar-3EQepX::after {
 	animation:statusBarIn 500ms linear forwards;
 	transform:scaleX(0);
