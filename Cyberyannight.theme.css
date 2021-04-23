@@ -303,7 +303,7 @@ TABLE OF CONTENTS
 
 :root {
 	/*Primary*/
-	--lv1: #00000f;
+	--lv1:   rgba(0,0,11,1);
 	--accent: #1973d3;
 	--hover: #135193;
 	--bg: url('https://i.imgur.com/GdnbuVj.jpg');
@@ -370,7 +370,7 @@ TABLE OF CONTENTS
 
 	/*Toasts*/
 	--toast-background:var(--lv1);
-	   --color-high:        rgba(0,0,20,1);
+	   --color-high:          rgba(0,0,20,1);
     --color-lowest:    rgba(72,134,161,1);
     --color-low:    rgba(19,81,147,1);
     --color-mid:      rgba(25,115,211,1);
@@ -5388,7 +5388,7 @@ border-bottom: 2px solid var(--hover);
 		transform: none;
 	}
 }
-
+/*
 .userPopout-3XzG_A {
 	border-radius: 0;
 	background: var(--lv1) !important;
@@ -5396,6 +5396,7 @@ border-bottom: 2px solid var(--hover);
 	transform:translateZ(0);
 }
 
+ 
 .full-motion .userPopout-3XzG_A {
 	animation: userPopout 350ms;
 }
@@ -5414,7 +5415,7 @@ border-bottom: 2px solid var(--hover);
 .footer-1fjuF6 {
 	background: transparent !important;
 }
-
+*/
 .quickMessage-1yeL4E {
 	transition: 150ms ease border, 150ms ease box-shadow;
 	box-shadow: none !important;
