@@ -304,11 +304,12 @@ TABLE OF CONTENTS
 :root {
 	/*Primary*/
 	--lv1:   rgba(0,0,11,1);
+	--lv2:  rgba(0,0,11,0.5);
 	--accent: #1973d3;
 	--hover: #135193;
-	--bg: url('https://i.imgur.com/GdnbuVj.jpg');
+	--bg:  url('https://i.imgur.com/fZ1Udj6.png');
 	--tooltip-color:#f6f6f7;
-	--bg-opacity: 0.25;
+	--bg-opacity:   0.25;
 	--bg-fade: 80%;
 
 	/*Support for other themes*/
@@ -332,10 +333,10 @@ TABLE OF CONTENTS
 
 	/*Discord Vars*/
 	--deprecated-store-bg: var(--lv1);	
-	--background-primary: var(--lv1);
+	--background-primary: var(--lv2);
 	--background-secondary: var(--lv1);
 	--background-secondary-alt:var(--lv1);
-	--background-tertiary: var(--lv1);
+	--background-tertiary: var(--lv2);
 	--channeltextarea-background:var(--lv1);
 	--background-modifier-active:transparent;
 
@@ -370,7 +371,7 @@ TABLE OF CONTENTS
 
 	/*Toasts*/
 	--toast-background:var(--lv1);
-	   --color-high:          rgba(0,0,20,1);
+	   --color-high:           rgba(0,0,20,0.5);
     --color-lowest:    rgba(72,134,161,1);
     --color-low:    rgba(19,81,147,1);
     --color-mid:      rgba(25,115,211,1);
@@ -382,7 +383,15 @@ TABLE OF CONTENTS
     --font: BlenderProBold;
 }
 
+.selector {
+    color: rgb(var(--lv1, var(--lv2)));
+}
+.selectorer {
+    color: rgba(var(--lv1, var(--lv2)), 0.5);
+}
+
 :root {
+	
  
 }
 
@@ -2938,11 +2947,27 @@ border-bottom: 2px solid var(--hover);
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	z-index: -3001;
+	
 	opacity: var(--bg-opacity);
 	background-attachment:fixed;
 	background: var(--bg) center/cover no-repeat;
 	-webkit-mask-image: radial-gradient(black, transparent var(--bg-fade));
+}
+
+#app-mount:before {
+  content: "";
+  background: var(--bg);
+  //background-position: var(--background-image-position, center);
+ // background-size: var(--background-image-size, cover);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: var(--bg-opacity);
+  background: var(--bg) center/cover no-repeat;
 }
 
 .full-motion .messagesWrapper-3lZDfY .scrollerWrap-2su1QI {
