@@ -305,11 +305,11 @@ TABLE OF CONTENTS
 	/*Primary*/
 	--lv1:   rgba(0,0,11,1);
 	--lv2:  rgba(0,0,11,0.75);
-	//--lv2: url('https://i.imgur.com/5h3TJPs.jpg')
+	
 	--accent: #1973d3;
 	--hover: #135193;
 	--bg: url('https://i.imgur.com/VyJyXnR.jpg');
-	//--bg: rgba(255,0,255,1);
+	
 	--tooltip-color:#f6f6f7;
 	--bg-opacity:       0.25;
 	--bg-fade: 80%;
@@ -331,7 +331,7 @@ TABLE OF CONTENTS
 
 	/*Branding*/
 	--theme-name:  'Cyberyannight UI';
-	--theme-version:   '4.7';
+	--theme-version:   '4.8';
 
 	/*Discord Vars*/
 	--deprecated-store-bg: var(--lv1);	
