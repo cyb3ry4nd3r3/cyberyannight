@@ -970,15 +970,19 @@ html.theme-light body.bd-minimal #app-mount::before {
 	-webkit-mask:linear-gradient(-90deg, var(--lv1), transparent);
 	right:-1px;
 	height:40px;
+	z-index: 3;
 }
 
-#app-mount .container-1r6BKw {	
+#app-mount .container-1r6BKw {
+	position: absolute;	
 	box-shadow: inset 0 0 0 100vmax rgba(255, 255, 255, .07);
 	height: 40px;
 	border-bottom: 2px solid var(--hover);
 	box-sizing: border-box;
 	background: var(--lv1);
 	overflow: visible;
+	max-width: 100%;
+	z-index: 3;
 }
 
 .children-19S4PO .iconWrapper-2OrFZ1:first-child {
@@ -1070,7 +1074,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 
 .iconWrapper-2OrFZ1,
 .search-36MZv- {
-	margin: 0 4px;
+	margin: 0 1px;
 }
 
 .strikethrough-3Wiitd {
@@ -1400,11 +1404,11 @@ html.theme-light body.bd-minimal #app-mount::before {
 
 .panels-j1Uci_ .container-3baos1:not(.powercord-spotify) .avatarWrapper-2yR4wp {
 	position: absolute;
-	top: -2px;
+	top: 0px;
 	right: 0;
 	height:40px;
 	padding-left: 30px;
-	z-index: 5;
+	z-index: 9;
 	display:flex;
 	align-items:center;
 	cursor:pointer;
@@ -2499,7 +2503,7 @@ border-bottom: 2px solid var(--hover);
 
 .members-1998pB {
     --bulk: 300px;
-    height: calc(100% + var(--bulk));
+    height: calc(90% + var(--bulk));
 	padding-bottom: calc(20px + var(--bulk));
 	position:relative;
 }
