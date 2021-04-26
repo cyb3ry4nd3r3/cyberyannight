@@ -134,8 +134,8 @@
 
 html, span:not([class*="spinner-"]):not([class*="spinnerItem"]) {backface-visibility: hidden;}
 
-//@keyframes loaderFade{0%{opacity:0;pointer-events:all}10%{opacity:1;pointer-events:all}90%{opacity:1;pointer-events:all}100%{opacity:0;pointer-events:none;display:none}}@keyframes loader{0%{transform:translate(-50%,-50%) scaleX(0);transform-origin:left center}100%{transform:translate(-50%);transform-origin:left center}}.full-motion body::before{content:'Loading /midnight/css/base.css';top:50%;left:50%;width:250px;height:4px;position:fixed;z-index:3000;transform:translate(-50%,-50%);box-shadow:inset 0 0 0 100vmax rgba(255,255,255,.14),inset 0 0 0 100vmax var(--lv1),0 0 0 100vmax rgba(255,255,255,.05),0 0 0 100vmax var(--lv1);color:#fff;text-align:center;line-height:50px;font-size:var(--size1);animation:loaderFade 1.5s linear forwards;opacity:0;pointer-events:none}.full-motion body::after{content:'';top:50%;left:50%;width:250px;height:4px;position:fixed;z-index:3000;transform:translate(-50%,-50%);box-shadow:0 0 24px 2px var(--accent);transform-origin:left center;background:var(--accent);animation:loader 1.5s linear,loaderFade 1.5s linear forwards;opacity:0;pointer-events:none}
-
+/*@keyframes loaderFade{0%{opacity:0;pointer-events:all}10%{opacity:1;pointer-events:all}90%{opacity:1;pointer-events:all}100%{opacity:0;pointer-events:none;display:none}}@keyframes loader{0%{transform:translate(-50%,-50%) scaleX(0);transform-origin:left center}100%{transform:translate(-50%);transform-origin:left center}}.full-motion body::before{content:'Loading /midnight/css/base.css';top:50%;left:50%;width:250px;height:4px;position:fixed;z-index:3000;transform:translate(-50%,-50%);box-shadow:inset 0 0 0 100vmax rgba(255,255,255,.14),inset 0 0 0 100vmax var(--lv1),0 0 0 100vmax rgba(255,255,255,.05),0 0 0 100vmax var(--lv1);color:#fff;text-align:center;line-height:50px;font-size:var(--size1);animation:loaderFade 1.5s linear forwards;opacity:0;pointer-events:none}.full-motion body::after{content:'';top:50%;left:50%;width:250px;height:4px;position:fixed;z-index:3000;transform:translate(-50%,-50%);box-shadow:0 0 24px 2px var(--accent);transform-origin:left center;background:var(--accent);animation:loader 1.5s linear,loaderFade 1.5s linear forwards;opacity:0;pointer-events:none}
+*/
 /*
 
 TABLE OF CONTENTS
@@ -309,6 +309,7 @@ TABLE OF CONTENTS
 	--accent: #1973d3;
 	--hover: #135193;
 	--bg: url('https://i.imgur.com/VyJyXnR.jpg');
+	/*--bg: rgba(255,255,255,1);*/
 	
 	--tooltip-color:#f6f6f7;
 	--bg-opacity:       0.25;
@@ -1408,7 +1409,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 	right: 0;
 	height:40px;
 	padding-left: 30px;
-	z-index: 9;
+	z-index: 9 !important;
 	display:flex;
 	align-items:center;
 	cursor:pointer;
@@ -2624,21 +2625,36 @@ border-bottom: 2px solid var(--hover);
 /*6.c. Member Dividers*/
 
 .membersGroup-v9BXpm {
-	text-align: left;
 	color: rgba(255,255,255,0.9);
-	border-image: linear-gradient(90deg, var(--hover) 90%, transparent);
-	border-image-slice: 1;
-	border-bottom:thin solid;
+	border-bottom: groove;
+	border-image: rgba(255,255,255,0);
+	border-image-slice: 90;	
+	
 	margin-bottom: 2px;
 	margin:0 12px;
 	font-size: var(--size2);
+	text-align: center;
 	font-weight: 400;
 	padding:0 4px;
-	padding-top:16px;
+	padding-top:20px;
 	line-height: 22px;
 	text-transform: none;
 	height:40px;
 	position:relative;
+}
+
+.membersWrap-2h-GB4 .membersGroup-v9BXpm::before {
+    content: '';
+    position: absolute;
+    overflow: hidden!important;
+    top: 18px;
+    left: 53px;
+    width: 150px;
+    height: 20px;
+    background: url("https://i.imgur.com/0h4uM7B.png"); 
+    background-size: 150px 20px;
+    transform: scaleY(1.5) scaleX(1.65);
+    filter: brightness(0.85);
 }
 
 /*6.d. Loading Animations*/
@@ -2964,8 +2980,8 @@ border-bottom: 2px solid var(--hover);
 #app-mount:before {
   content: "";
   background: var(--bg);
-  //background-position: var(--background-image-position, center);
- // background-size: var(--background-image-size, cover);
+  background-position: var(--background-image-position, center);
+  background-size: var(--background-image-size, cover);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -3089,11 +3105,11 @@ border-bottom: 2px solid var(--hover);
 	border-radius: var(--user-roundness);
 	height: 32px !important;
 	width: 32px !important;
-	//--status-color:var(--accent);
+	
 	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
 	
 	transition: 150ms ease box-shadow;
-	//investigate here for status borders
+	/*investigate here for status borders*/
 }
 
 .cozy-3raOZG .contents-2mQqc9 .avatar-1BDn8e:hover {
@@ -8650,7 +8666,7 @@ body .bd-toasts {
 	content:'';
 	width:15px;
 	height:15px;
-	display:block
+	display:block;
 	position:relative;
 	background:#fff;
 	-webkit-mask:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iIzAwMDAwMCIgZD0iTTEwLjQwNCA1LjExbC0xLjAxNS0xLjAxNC01LjA3NSA1LjA3NGMtMC44NDEgMC44NDEtMC44NDEgMi4yMDQgMCAzLjA0NHMyLjIwNCAwLjg0MSAzLjA0NSAwbDYuMDkwLTYuMDg5YzEuNDAyLTEuNDAxIDEuNDAyLTMuNjczIDAtNS4wNzRzLTMuNjc0LTEuNDAyLTUuMDc1IDBsLTYuMzk0IDYuMzkzYy0wLjAwNSAwLjAwNS0wLjAxMCAwLjAwOS0wLjAxNCAwLjAxMy0xLjk1NSAxLjk1NS0xLjk1NSA1LjEyMyAwIDcuMDc3czUuMTIzIDEuOTU0IDcuMDc4IDBjMC4wMDQtMC4wMDQgMC4wMDgtMC4wMDkgMC4wMTMtMC4wMTRsMC4wMDEgMC4wMDEgNC4zNjUtNC4zNjQtMS4wMTUtMS4wMTQtNC4zNjUgNC4zNjNjLTAuMDA1IDAuMDA0LTAuMDA5IDAuMDA5LTAuMDEzIDAuMDEzLTEuMzkyIDEuMzkyLTMuNjU2IDEuMzkyLTUuMDQ4IDBzLTEuMzkyLTMuNjU1IDAtNS4wNDdjMC4wMDUtMC4wMDUgMC4wMDktMC4wMDkgMC4wMTQtMC4wMTNsLTAuMDAxLTAuMDAxIDYuMzk1LTYuMzkzYzAuODM5LTAuODQgMi4yMDUtMC44NCAzLjA0NSAwczAuODM5IDIuMjA1IDAgMy4wNDRsLTYuMDkwIDYuMDg5Yy0wLjI4IDAuMjgtMC43MzUgMC4yOC0xLjAxNSAwcy0wLjI4LTAuNzM1IDAtMS4wMTRsNS4wNzUtNS4wNzV6Ij48L3BhdGg+PC9zdmc+') center/cover no-repeat;
@@ -10547,6 +10563,21 @@ header + .peopleListItem-2nzedh {
   margin-right: 98px;
 }
 
+
+.field-1HUseB+.field-1HUseB .colorHeaderPrimary-26Jzh-.size16-1P40sf { 
+    filter: blur(5px);
+}
+.field-1HUseB+.field-1HUseB .colorHeaderPrimary-26Jzh-.size16-1P40sf:hover { 
+    filter: blur(0px);
+    transition: 0.5s;
+}
+.usernameInnerRow-ZlFnET { 
+    filter: blur(5px);
+}
+.usernameInnerRow-ZlFnET:hover { 
+    filter: blur(0px);
+    transition: 0.5s;
+}
 /*15.b. Common Elements*/
 
 .description-3_Ncsb, 
