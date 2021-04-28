@@ -1518,7 +1518,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 .childWrapper-anI2G9 {
 	background:transparent !important;
 	font-size:var(--size0);
-	line-height:30px;
+	line-height:40px;
 }
 
 .homeIcon-FuNwkv {
@@ -1527,7 +1527,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 	-webkit-mask-size: 28px;
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
-	margin: 0;
+	margin: 10px;
 	height: 100%;
 	width: 100%;
 }
