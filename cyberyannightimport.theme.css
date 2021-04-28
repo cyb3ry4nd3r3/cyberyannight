@@ -1527,7 +1527,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 	-webkit-mask-size: 28px;
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
-	margin: 10px;
+	margin: 0;
 	height: 100%;
 	width: 100%;
 	
