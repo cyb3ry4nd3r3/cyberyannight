@@ -1530,6 +1530,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 	margin: 10px;
 	height: 100%;
 	width: 100%;
+	top: 7px;
 }
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL {
@@ -1553,7 +1554,7 @@ border-bottom: 2px solid var(--hover);
 }
 
 .homeIcon-FuNwkv a{
-    margin-top: 17px !important;
+    margin-top: 7px !important;
 }
 
 .listItem-2P_4kh {
