@@ -1520,17 +1520,6 @@ html.theme-light body.bd-minimal #app-mount::before {
 	line-height:40px;
 }
 
-.wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL {
-	position: absolute;
-	top: -44px;
-	display: flex;
-	justify-content: center;
-	height: 42px;
-	border-bottom: 2px solid var(--hover);
-	width:60px;
-	background:rgba(255,255,255,0.07);
-}
-
 .homeIcon-FuNwkv {
 	background-color: #fff !important;
 	-webkit-mask: url('https://i.imgur.com/6im2D3c.png');
@@ -1540,6 +1529,17 @@ html.theme-light body.bd-minimal #app-mount::before {
 	margin: 0;
 	height: 100%;
 	width: 100%;
+}
+
+.wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL {
+	position: absolute;
+	top: -44px;
+	display: flex;
+	justify-content: center;
+	height: 42px;
+	border-bottom: 2px solid var(--hover);
+	width:60px;
+	background:rgba(255,255,255,0.07);
 }
 
 #app-mount .guilds-1SWlCJ {
