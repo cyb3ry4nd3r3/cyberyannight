@@ -1562,11 +1562,11 @@ html.theme-light body.bd-minimal #app-mount::before {
 	position:static;
 }
 
-.childWrapper-anI2G9 {
-	background:rgba(155,155,155) !important;
+.tutorialcontainer-2sGCg9 childWrapper-anI2G9 {
+	background:transparent!important;
 	font-size:var(--size0);
 	line-height:40px;
-	-webkit-mask: url('https://i.imgur.com/6im2D3c.png');
+	-webkit-mask: url("https://i.imgur.com/6im2D3c.png");
 	-webkit-mask-size: 40px;
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-position: center;
@@ -1574,23 +1574,22 @@ html.theme-light body.bd-minimal #app-mount::before {
 }
 
 .homeIcon-FuNwkv {
-	background: rgba(255,255,255) !important;
-	/*background: no-repeat url('https://i.imgur.com/6im2D3c.png');
-	*/-webkit-mask:url('https://i.imgur.com/kEAasFt.png'); 
-	-webkit-mask-size: 14px;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-	margin: 0;
-	height: 100%;
-	width: 100%;
-  	animation: pulse 7s linear;
-  	-webkit-animation-iteration-count: infinite;
-  	-moz-animation-iteration-count: infinite;
-  	animation-iteration-count: infinite;
+	
+	
+
 	
 }
-.homeicon path {display: none;}
-
+.homeIcon-FuNwkv path {display: none;}
+.homeIcon-FuNwkv{
+	background-image: url('https://i.imgur.com/iRO5S3r.gif');
+	background-color: transparent !important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	height: 75%;
+	width: 100%;
+	
+}
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .tutorialContainer-1v44GL {
 	position: absolute;
 	top: -44px;
@@ -10587,6 +10586,11 @@ header + .peopleListItem-2nzedh {
 /*15. User Settings Content*/
 
 /*15.a. Content Column Layout*/
+
+.contentColumn-2hrIYH .contentColumnDefault-1VQkGM {
+background: no-repeat center url('https://i.imgur.com/5h3TJPs.jpg');
+
+}
 
 .standardSidebarView-3F1I7i .contentRegionScroller-26nc1e {
   width: 100%;
