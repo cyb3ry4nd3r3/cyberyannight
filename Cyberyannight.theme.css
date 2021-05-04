@@ -1,29 +1,12 @@
 /**
  * @name Cyberyannight Theme
  * @version 1.0.0
- * @description 🤖 a mostly repaired and more functional fusion of midnight and cyberpunk tailored to my personal tastes. 
- * @website https://github.com/ElijahPepe/BDThemes
- * @author Elijah Conners, Tropical#8908, modified by me
- * @patreon https://www.patreon.com/elijahpepe
- * @authorId 301194255731392513
- * @source https://danny9182.github.io/BetterDiscordStuff/midnight/css/base.css
- * @website https://tropix126.github.io/BetterDiscordStuff/midnight/
- * @invite TeRQEPb 
- * @authorId 254362351170617345
- *
- * ▓█████  ██▓     ██▓ ▄▄▄██▀ ▄▄▄       ██░ ██  ██▓███   ▓█████ ██▓███   ▓█████
- * ▓█   ▀ ▓██▒   ▒▓██▒   ▒██ ▒████▄   ▒▓██░ ██ ▓██░  ██  ▓█   ▀▓██░  ██  ▓█   ▀
- * ▒███   ▒██░   ▒▒██▒   ░██ ▒██  ▀█▄ ░▒██▀▀██ ▓██░ ██▓▒ ▒███  ▓██░ ██▓▒ ▒███  
- * ▒▓█  ▄ ▒██░   ░░██░▓██▄██▓░██▄▄▄▄██ ░▓█ ░██ ▒██▄█▓▒ ▒ ▒▓█  ▄▒██▄█▓▒ ▒ ▒▓█  ▄
- * ░▒████▒░██████░░██░ ▓███▒ ▒▓█   ▓██ ░▓█▒░██▓▒██▒ ░  ░▒░▒████▒██▒ ░  ░▒░▒████
- * ░░ ▒░ ░░ ▒░▓   ░▓   ▒▓▒▒░ ░▒▒   ▓▒█  ▒ ░░▒░▒▒▓▒░ ░  ░░░░ ▒░ ▒▓▒░ ░  ░░░░ ▒░ 
- *  ░ ░  ░░ ░ ▒  ░ ▒ ░ ▒ ░▒░ ░ ░   ▒▒   ▒ ░▒░ ░░▒ ░     ░ ░ ░  ░▒ ░     ░ ░ ░  
- *    ░     ░ ░  ░ ▒ ░ ░ ░ ░   ░   ▒    ░  ░░ ░░░           ░  ░░           ░  
- *    ░  ░    ░    ░   ░   ░       ░    ░  ░  ░         ░   ░           ░   ░  
+ * @description 🤖 a sleek modern cyber look for discord, based on Midnight, features high customibility
+ * @website https://github.com/cyb3ry4nd3r3/cyberyannight
+ * @author jackcook99#0615
+ * @authorId 640661818704003072
 **/
-
 @import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/font/stylesheet.css");
-@import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/CyberpunkImport.theme.css");
 @import url("https://bdsources.github.io/sourcecheck/code.css");
 @import url(https://bdsources.github.io/sourcecheck/code.css);
 @import url(https://tropix126.github.io/BetterDiscordStuff/friendgrid/v3/css/base.css);
@@ -172,7 +155,7 @@
 
 	/*Branding*/
 	--theme-name:  'Cyberyannight UI';
-	--theme-version:   '4.8';
+	--theme-version:   '5.0';
 
 	/*Discord Vars*/
 	--deprecated-store-bg: var(--lv1);	
@@ -217,10 +200,10 @@
 	--toast-background:var(--lv1);
 	   --color-high:           rgba(0,0,20,0.5);
     --color-lowest:    rgba(72,134,161,1);
-    --color-low:    rgba(19,81,147,1);
-    --color-mid:      rgba(25,115,211,1);
-    --color-alert: rgb(229, 0, 77);
-    --color-alert-hover: rgb(236, 0, 80);
+    --color-low:        rgba(19,81,147,1);
+    --color-mid:        rgba(25,115,211,1);
+    --color-alert:   rgb(229, 0, 77);
+    --color-alert-hover:   rgb(236, 0, 18);
     --color-high-trans:         rgba(0, 0, 19, 0.8);
     --color-low-trans: rgba(184, 217, 209, 0.6);
     --color-alert-trans: rgba(229, 0, 77, 0.7);
