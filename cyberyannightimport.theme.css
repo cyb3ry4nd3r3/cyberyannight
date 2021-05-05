@@ -5224,7 +5224,10 @@ border-bottom: 2px solid var(--hover);
 	margin:5px 20px;
 	padding-top:0;
 }
-
+.theme-dark .activeButton-rvKcqq, .theme-dark .activeButton-rvKcqq:hover, .theme-light .activeButton-rvKcqq, .theme-light .activeButton-rvKcqq:hover {
+    color: #fff;
+    background-color: var(--color-low);
+}
 .searchResultMessage-2VxO12.after-2g0jjc {
 	margin-top:10px;
 }
@@ -10804,6 +10807,13 @@ background: no-repeat center url('https://i.imgur.com/5h3TJPs.jpg');
 }
 
 /*17.b. Status*/
+
+.panels-j1Uci_ {
+    display: flex;
+    flex-direction: column;
+    background: var(--lv1);
+    z-index: 10;
+}
 
 #app-mount .wrapper-3t9DeA .mask-1l8v16>rect[x="22"] {
 	x: 0;
