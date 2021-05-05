@@ -10043,7 +10043,14 @@ header + .peopleListItem-2nzedh {
 	box-shadow: 0 0 12px var(--accent);
 }
 
-
+.container-3auIfb {
+	background-color: var(--accent) !important;
+	box-shadow: 0 0 12px var(--accent);
+}
+element.style{
+	background: var(--accent);
+	box-shadow: 0 0 12px var(--accent);
+}
 #app-mount #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked:before,
 #app-mount .themeDefault-24hCdX.valueChecked-m-4IJZ:after {
 	margin-left: 6px;
@@ -10285,7 +10292,13 @@ header + .peopleListItem-2nzedh {
 	opacity:1 !important;
 	transform:none !important;
 }
-
+.standardSidebarView-3F1I7i .contentColumn-2hrIYH, .standardSidebarView-3F1I7i .customColumn-Rb6toI {
+    flex: 1 1 auto;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 460px;
+	background: url("https://i.imgur.com/5h3TJPs.jpg") center/cover no-repeat;
+} /*investigate settings background*/
 #app-mount .standardSidebarView-3F1I7i {
 	top:42px;
 }
