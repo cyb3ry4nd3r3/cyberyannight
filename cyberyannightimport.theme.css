@@ -8,8 +8,6 @@
 **/
 @import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/font/stylesheet.css");
 /*@import url("https://cyb3ry4nd3r3.github.io/cyberyannight/CyberpunkImport.theme.css");*/
-@import url("https://bdsources.github.io/sourcecheck/code.css");
-@import url(https://bdsources.github.io/sourcecheck/code.css);
 @import url(https://tropix126.github.io/BetterDiscordStuff/friendgrid/v3/css/base.css);
 @import url(https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css);
 @import url(https://rsms.me/inter/inter.css);
@@ -230,12 +228,13 @@ TABLE OF CONTENTS
 	10.f. Guild Invite Modal
 	10.g. Upload Modal
 
+
 11. Pages
 	11.a. Loading Screen
 	11.b. Login Screen
 	11.c. Server Discovery
 	11.d. Friends List
-	11.e. Store
+	11.e. Store/nitro perks
 	11.f. Library
 	11.g. Nitro Advertising Tab
 
@@ -370,6 +369,7 @@ TABLE OF CONTENTS
 	   --color-high:           rgba(0,0,20,0.5);
     --color-lowest:    rgba(72,134,161,1);
     --color-low:    rgba(19,81,147,1);
+	--color-low2:    rgba(19,90,150,1);
     --color-mid:      rgba(25,115,211,1);
     --color-alert: rgb(229, 0, 77);
     --color-alert-hover: rgb(236, 0, 80);
@@ -5340,6 +5340,14 @@ border-bottom: 2px solid var(--hover);
 	background-color:var(--lv1);
 }
 
+.videoControls-24w7Xp {
+	background: url("https://i.imgur.com/I1IbOxn.jpg") center/cover no-repeat;
+}
+
+
+.voiceCallWrapper-3kPwHm{
+	z-index: 1;
+}
 .wrapper-29NfPK {
 	box-shadow:0 0 12px var(--lv1);
 }
@@ -5374,6 +5382,20 @@ border-bottom: 2px solid var(--hover);
 	border-radius:var(--user-roundness);
 }
 
+.colorable-1bkp8v.white-3GPOIp.active-1QRrIS, .colorable-1bkp8v.white-3GPOIp:hover {
+    background: var(--color-low2);
+}
+
+.colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
+    color: #060607;
+    background: var(--color-low);
+}
+.colorable-1bkp8v.primaryDark-3mSFDl.active-1QRrIS, .colorable-1bkp8v.primaryDark-3mSFDl:hover {
+    background: var(--color-low2);
+}
+.colorable-1bkp8v.primaryDark-3mSFDl {
+    background: var(--color-low);
+}
 /*8.r. NSFW Warning*/
 
 .gatedContent-3-B7qB {
@@ -9756,7 +9778,10 @@ header + .peopleListItem-2nzedh {
 
 /*11.e. Store*/
 
-
+.perksModalContentWrapper-2HU6uL {
+    padding: 64px 0 96px;
+   background: url("https://i.imgur.com/5h3TJPs.jpg") center/cover no-repeat;
+}
 																										
 /*11.f. Library*/
 
