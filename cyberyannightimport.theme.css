@@ -5554,15 +5554,15 @@ border-bottom: 2px solid var(--hover);
 		transform: none;
 	}
 }
-/*
+
 .userPopout-3XzG_A {
 	border-radius: 0;
-	background: var(--lv1) !important;
+	background: var(--lv2) !important;
 	box-shadow: 0 0 12px 1px var(--lv1);
 	transform:translateZ(0);
 }
 
- 
+
 .full-motion .userPopout-3XzG_A {
 	animation: userPopout 350ms;
 }
@@ -5574,14 +5574,14 @@ border-bottom: 2px solid var(--hover);
 
 .body-3iLsc4,
 .activityUserPopout-2yItg2 {
-	background: rgba(255, 255, 255, .04) !important;
+	background:var(--lv2) !important;
 }
 
 .bodyInner-245q0L,
 .footer-1fjuF6 {
-	background: transparent !important;
+	background:var(--lv2)!important;
 }
-*/
+
 .quickMessage-1yeL4E {
 	transition: 150ms ease border, 150ms ease box-shadow;
 	box-shadow: none !important;
