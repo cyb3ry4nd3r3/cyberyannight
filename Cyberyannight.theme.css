@@ -194,7 +194,7 @@
 	--size6: .35rem;
 	--font:    'Inter', BlenderProBold;
 	--letter-spacing: -.02rem;
-	font-size: 14px !important;
+	font-size: 17px !important;
 
 	/*Toasts*/
 	--toast-background:var(--lv1);
