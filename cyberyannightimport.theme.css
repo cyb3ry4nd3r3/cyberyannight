@@ -10281,7 +10281,7 @@ element.style{
 	width: 7px;
 }
 
-/*13. Outer Settings Layers*/
+/*13.a Outer Settings Layers*/
 
 .platform-win .layer-3QrUeG {
 	top:-30px;
@@ -10292,17 +10292,21 @@ element.style{
 	opacity:1 !important;
 	transform:none !important;
 }
+/*
 .standardSidebarView-3F1I7i .contentColumn-2hrIYH, .standardSidebarView-3F1I7i .customColumn-Rb6toI {
     flex: 1 1 auto;
     max-width: 100%;
     min-height: 100%;
     min-width: 460px;
 	background: url("https://i.imgur.com/5h3TJPs.jpg") center/cover no-repeat;
-} /*investigate settings background*/
+} /*investigate settings background
 #app-mount .standardSidebarView-3F1I7i {
 	top:42px;
+}*/
+.standardSidebarView-3F1I7i .contentRegionScroller-26nc1e {
+    width: 100%;
+    background: url(https://i.imgur.com/5h3TJPs.jpg) center/cover no-repeat;
 }
-
 .platform-win #app-mount .standardSidebarView-3F1I7i {
 	top:70px;
 }
