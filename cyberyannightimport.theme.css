@@ -7,7 +7,7 @@
  * @authorId 640661818704003072
 **/
 @import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/font/stylesheet.css");
-@import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/CyberpunkImport.theme.css");
+/*@import url("https://cyb3ry4nd3r3.github.io/cyberyannight/CyberpunkImport.theme.css");*/
 @import url("https://bdsources.github.io/sourcecheck/code.css");
 @import url(https://bdsources.github.io/sourcecheck/code.css);
 @import url(https://tropix126.github.io/BetterDiscordStuff/friendgrid/v3/css/base.css);
@@ -159,7 +159,7 @@ TABLE OF CONTENTS
 5. Channels Sidebar
 	5.a. Outer Sidebar Containers
 	5.b. Channel Guild Header
-		5.b.a Server Banners
+	5.b.a Server Banners
 	5.c. Account Details Container
 	5.d. Guild Text Channels
 	5.e. Guild Voice Channels
@@ -317,16 +317,22 @@ TABLE OF CONTENTS
 
 	/*Branding*/
 	--theme-name:  'Cyberyannight UI';
-	--theme-version:   '4.8';
+	--theme-version:   '5.0';
 
 	/*Discord Vars*/
 	--deprecated-store-bg: var(--lv1);	
 	--background-primary: var(--lv2);
-	--background-secondary: var(--lv1);
+	--background-secondary:  rgba(0,0,11,0.75);
 	--background-secondary-alt:var(--lv1);
 	--background-tertiary: var(--lv2);
-	--channeltextarea-background:var(--lv1);
+	--channeltextarea-background:rgba(0,0,11,0.075);
 	--background-modifier-active:transparent;
+	--interactive-normal: var(--color-low);
+    --interactive-hover: var(--color-alert-hover);
+    --interactive-active: var(--color-lowest);
+	--channels-default: var(--color-low);
+	--header-primary: var(--color-low) !important;
+    --header-secondary: var(--color-low) !important;
 
 	/*Status*/
 	
@@ -357,6 +363,7 @@ TABLE OF CONTENTS
 	--font:    'Inter', BlenderProBold;
 	--letter-spacing: -.02rem;
 	font-size: 14px !important;
+	--text-normal: var(--color-low);
 
 	/*Toasts*/
 	--toast-background:var(--lv1);
@@ -1574,12 +1581,7 @@ html.theme-light body.bd-minimal #app-mount::before {
 	color:rgba(255,255,255) !important;
 }
 
-.homeIcon-FuNwkv {
-	
-	
 
-	
-}
 .homeIcon-FuNwkv path {display: none;}
 .homeIcon-FuNwkv{
 	background-image: url('https://i.imgur.com/iRO5S3r.gif');
@@ -1651,7 +1653,12 @@ border-bottom: 2px solid var(--hover);
 	width: 40px;
 	height: 40px;
 }
-
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9,
+.childWrapper-anI2G9 {
+  background-color: transparent;
+  color: var(--color-low);
+}
 .icon-27yU2q,
 .folderIconWrapper-226oVY,
 .iconInactive-98JN5i,
@@ -2128,7 +2135,15 @@ border-bottom: 2px solid var(--hover);
 .containerUserOver-1U5YnL {
 	margin-top:5px;
 }
+.wrapper-2jXpOf.modeUnread-1qO3K1 .name-23GUGE {
+  color: var(--color-alert);
+}
 
+.wrapper-2tAnRe {
+  border-radius: 0;
+  border: 1px solid var(--color-mid);
+  height: 18px;
+}
 .content-3at_AU {
 	border-radius: 0;
 	transition: 150ms all ease;
@@ -2146,7 +2161,12 @@ border-bottom: 2px solid var(--hover);
 	box-shadow: 0 0 2px 2px rgba(255, 255, 255, .15);
 	border-left: 2px solid rgba(255, 255, 255, .5);
 }
-
+.wrapper-2jXpOf.modeUnread-1qO3K1 .icon-1DeIlz {
+  color: var(--color-alert);
+}
+.wrapper-2jXpOf.modeUnread-1qO3K1 .name-23GUGE {
+  color: var(--color-alert);
+}
 .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU {
 	background-color: var(--accent);
 	border-radius: 0;
@@ -3003,7 +3023,39 @@ border-bottom: 2px solid var(--hover);
 		opacity: 0;
 	}
 }
+.theme-dark .form-2fGMdU:before,
+.chat-3bRxxu {
+  background: transparent;
+}
+.scroller-1IIF0A,
+.scroller-9moviB,
+.applicationStore-1pNvnv,
+.nowPlayingColumn-2sl4cE,
+.theme-dark .inset-3sAvek,
+.theme-dark .container-1D34oG {
+  background-color: transparent;
+}
 
+.clickable-1JJAn8:hover .layout-2DM8Md,
+.members-1998pB,
+.members-1998pB > div {
+  background: transparent;
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9,
+.childWrapper-anI2G9 {
+  background-color: transparent;
+  color: var(--color-low);
+}
+.app-2rEoOp,
+.bg-h5JY_x {
+  background-color: transparent;
+}
+.container-3w7J-x {
+  background: transparent;
+  
+}
 .messages-3amgkR {
 	background:transparent;
 }
@@ -9943,11 +9995,12 @@ header + .peopleListItem-2nzedh {
 	background: rgba(255, 255, 255, .35);
 }
 
-#app-mount #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked,
-#app-mount .themeDefault-24hCdX.valueChecked-m-4IJZ {
+
+.bd-switch-body{
 	background: var(--accent);
 	box-shadow: 0 0 12px var(--accent);
 }
+
 
 #app-mount #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked:before,
 #app-mount .themeDefault-24hCdX.valueChecked-m-4IJZ:after {
@@ -9962,11 +10015,11 @@ header + .peopleListItem-2nzedh {
 	left: 0;
 	margin: 0;
 }
-
+/*
 .ui-switch:before {
 	height: 23px;
 }
-
+*/
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch,
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before,
 .themeDefault-24hCdX,
