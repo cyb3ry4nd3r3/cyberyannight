@@ -6,7 +6,8 @@
  * @author jackcook99#0615
  * @authorId 640661818704003072
 **/
-@import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/font/stylesheet.css");
+/*@import url("https://elijahpepe.github.io/BDThemes/Cyberpunk/font/stylesheet.css");*/
+@import url("https://cyb3ry4nd3r3.github.io/cyberyannight/fonts/font/stylesheet.css");
 /*@import url("https://cyb3ry4nd3r3.github.io/cyberyannight/CyberpunkImport.theme.css");*/
 @import url(https://tropix126.github.io/BetterDiscordStuff/friendgrid/v3/css/base.css);
 @import url(https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css);
@@ -360,9 +361,8 @@ TABLE OF CONTENTS
 	--size4:   .7rem;
 	--size5:   .5rem;
 	--size6:   .35rem;
-	--font:    'Inter', BlenderProBold;
-	--letter-spacing: -.02rem;
-	font-size: 17px !important;
+	--font:    Blender Pro;
+	--letter-spacing: -.02rem;font-size: 14px !important;
 	--text-normal: var(--color-low);
 
 	/*Toasts*/
@@ -377,7 +377,7 @@ TABLE OF CONTENTS
     --color-high-trans:         rgba(0, 0, 19, 0.8);
     --color-low-trans: rgba(184, 217, 209, 0.6);
     --color-alert-trans: rgba(229, 0, 77, 0.7);
-    --font: BlenderProBold;
+    --font: Blender Pro;
 }
 /*
 .selector {
@@ -2133,9 +2133,7 @@ border-bottom: 2px solid var(--hover);
 .containerUserOver-1U5YnL {
 	margin-top:5px;
 }
-.wrapper-2jXpOf.modeUnread-1qO3K1 .name-23GUGE {
-  color: var(--color-alert);
-}
+
 
 .wrapper-2tAnRe {
   border-radius: 0;
@@ -2159,9 +2157,10 @@ border-bottom: 2px solid var(--hover);
 	box-shadow: 0 0 2px 2px rgba(255, 255, 255, .15);
 	border-left: 2px solid rgba(255, 255, 255, .5);
 }
+/*
 .wrapper-2jXpOf.modeUnread-1qO3K1 .icon-1DeIlz {
   color: var(--color-alert);
-}
+}*/
 .wrapper-2jXpOf.modeUnread-1qO3K1 .name-23GUGE {
   color: var(--color-alert);
 }
@@ -10684,7 +10683,7 @@ element.style{
 }
 
 .info-1VyQPT .colorMuted-HdFt4q:last-child:after {
-	content:var(--theme-name) ' v' var(--theme-version) ' by Tropical and Fx Danny :3';
+	content:var(--theme-name) ' v' var(--theme-version) ' now by cyb3ry4nd3r3';
 	text-transform:none;
 	display:block;
 }
