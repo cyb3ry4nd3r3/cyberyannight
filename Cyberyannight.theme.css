@@ -153,10 +153,6 @@
 	--invisible:var(--invisible);
 	--streaming:var(--twitch-purple);
 
-	/*Branding*/
-	--theme-name:  'Cyberyannight UI';
-	--theme-version:   '5.0';
-
 	/*Discord Vars*/
 	--deprecated-store-bg: var(--lv1);	
 	--background-primary: var(--lv2);
